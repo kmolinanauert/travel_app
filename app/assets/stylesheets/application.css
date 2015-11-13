@@ -1,0 +1,57 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.navbar-default {
+    background:#108368;
+    border-radius:0px;
+    margin-bottom:0px;
+    border:none;
+}
+
+.navbar-default .navbar-brand {
+    color: #88bcb6;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#FFFFFF;
+}
+.jumbotron {
+    background: url('https://images.unsplash.com/photo-1443926818681-717d074a57af?ixlib=rb-0.3.5&q=80&fm=jpg&s=0c3767e1944b316d5e66df41429e4b29');
+    background-size:cover;
+    background-attachment:fixed;
+    height:350px;
+}
+
+a.button, input {
+    padding: 10px 6px;
+    border: 3px solid #88bcb6;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    color:#88bcb6;
+    background:transparent;
+}
+a.button:hover, input:hover {
+    background:#88bcb6;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+#content {
+    padding-bottom:40px;
+}
+#footer {
+    padding: 50px;
+    background: #163a4c;
+    color: #88bcb6;
+}

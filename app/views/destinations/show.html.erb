@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @destination.city %>, <%= @destination.country %></h1>
+<% if @destination.avatar_file_name != nil %>
+<%= image_tag @destination.avatar.url, class: "img-responsive" %><% end %>
+
+<p> <%= @destination.description %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @destination.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @destination.country %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @destination.description %>
+</p>
+
+<%= link_to 'Edit', edit_destination_path(@destination) %> |
+<%= link_to 'Back', destinations_path %>
